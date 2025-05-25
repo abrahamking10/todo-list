@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To Do List</h1>
+    <button id="create_task" onclick="openPopup()">+ New Task</button>
+    <div class="tasks" id="taskContainer">
+        <!--
+        EXAMPLE TASK:
+        <div class="task">
+            <h2>Take out trash</h2>
+            <button class="delete"><img src="Images/Icons/trash-x.png" alt="delete"></button>
+        </div>
+        -->
+    </div>
+    <div class="modal" id="modal">
+        <div class="innerModal">
+            <h2>Add new task</h2>
+            <input type="text" id="inputBox">
+            <button id="addTask" onclick="assignTask()">Add Task</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
